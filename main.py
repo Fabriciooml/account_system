@@ -8,8 +8,7 @@ def connect_database():
     global cursor
     connection = mysql.connector.connect(host='localhost',
                                         database='passwords',
-                                        user='root',
-                                        password='toor')
+                                        user='root')
     if connection.is_connected():
         db_Info = connection.get_server_info()
         print("Connected to MySQL Server version ", db_Info)
